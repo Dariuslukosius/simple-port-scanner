@@ -27,6 +27,7 @@ TECHNOLOGIJOS
 PALEIDIMO BŪDAI
 ---------------
 Galima paleisti 3 būdais – pasirink tau patogiausią.
+
 ⚠️ Pastaba: Pirmiausia nusiklonavus repozitoriją privaloma įeiti į projekto katalogą:
 cd simple-port-scanner
 
