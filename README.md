@@ -1,78 +1,82 @@
 ============================
-        Simple Port Scanner
-============================
+Simple Port Scanner
+📝 APRAŠYMAS
 
-APRAŠYMAS
----------
-Simple Port Scanner – minimalistinė Python Flask aplikacija, skirta TCP portų skenavimui nurodytam tinklo adresui. 
-Programėlė leidžia per paprastą web sąsają įvesti tikslinį IP adresą arba domeną bei portų diapazoną ir patikrina, kurie portai yra atidaryti.
+Minimalistinė Python Flask aplikacija, skirta TCP portų skenavimui nurodytam tinklo adresui.
+Per paprastą web sąsają galima įvesti IP adresą arba domeną bei portų diapazoną ir matyti, kurie portai atidaryti.
 
-Projektas taip pat demonstruoja, kaip sukurti Flask aplikaciją, ją konteinerizuoti naudojant Docker ir paleisti izoliuotoje aplinkoje.
+Projektas taip pat parodo, kaip sukurti Flask aplikaciją, ją konteinerizuoti naudojant Docker ir paleisti izoliuotoje aplinkoje.
+⚙️ FUNKCIONALUMAS
 
-FUNKCIONALUMAS
---------------
-- TCP portų skenavimas pagal vartotojo įvestus portų diapazonus
-- Rezultatai pateikiami aiškioje web sąsajoje
-- Flask pagrindu sukurta lengvai suprantama aplikacija
-- Docker konteineris paprastam paleidimui ir diegimui
+    TCP portų skenavimas pagal vartotojo įvestus portų diapazonus
 
-TECHNOLOGIJOS
--------------
-- Python 3
-- Flask web framework
-- Docker (konteinerizavimui)
+    Rezultatai pateikiami aiškioje web sąsajoje
 
-----------------------------------------------------
+    Flask pagrindu sukurta lengvai suprantama aplikacija
 
-PALEIDIMO BŪDAI
----------------
-Galima paleisti 3 būdais – pasirink tau patogiausią:
+    Docker konteineris paprastam paleidimui ir diegimui
 
-1. Docker – alternatyva
------------------------
-Jei turi Docker, tai pats paprasčiausias būdas paleisti:
+🧰 TECHNOLOGIJOS
 
-    docker build -t simple-port-scanner .
-    docker run -p 5001:5001 simple-port-scanner
+    Python 3
 
-Tuomet eik naršyklėje į: http://localhost:5001
+    Flask web framework
 
+    Docker (konteinerizavimui)
 
-2. Lokalus paleidimas su Python (Unix/macOS) – alternatyva
-----------------------------------------------------------
-Atidaryk terminalą projekto kataloge.
+🚀 PALEIDIMO BŪDAI
 
-Paleisk start skriptą:
+Galima paleisti trimis būdais – pasirink tau patogiausią.
 
-    ./start.sh
+⚠️ Pastaba: Pirmiausia nusiklonavus repozitoriją privaloma įeiti į projekto katalogą:
+cd simple-port-scanner
+🐳 1. Docker (rekomenduojamas)
 
-Jei neturi start.sh, sukurk jį su šiuo turiniu:
+Pats paprasčiausias būdas, jei turi Docker:
 
-    #!/bin/bash
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
-    python app.py
+docker build -t simple-port-scanner .
+docker run -p 5001:5001 simple-port-scanner
 
-Eik į naršyklę ir atsidaryk: http://localhost:5001
+Atverk naršyklėje:
+http://localhost:5001
+🐍 2. Lokalus paleidimas su Python (Unix/macOS)
 
+Atidaryk terminalą projekto kataloge ir paleisk start skriptą:
 
-3. Lokalus paleidimas su Python (Windows) – alternatyva
--------------------------------------------------------
-Atidaryk komandų eilutę projekto kataloge.
+./start.sh
 
-Paleisk start.bat failą:
+Jei neturi start.sh, susikurk su tokiu turiniu:
+#!/bin/bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py
 
-    start.bat
+Atverk naršyklėje:
+http://localhost:5001
+🪟 3. Lokalus paleidimas su Python (Windows)
 
-Jei neturi start.bat, sukurk jį su šiuo turiniu:
+Atidaryk komandų eilutę projekto kataloge ir paleisk:
 
-    python -m venv venv
-    venv\Scripts\activate
-    pip install -r requirements.txt
-    python app.py
-    pause
+start.bat
 
-Eik į naršyklę ir atsidaryk: http://localhost:5001
+Jei neturi start.bat, susikurk su tokiu turiniu:
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+pause
 
+Atverk naršyklėje:
+http://localhost:5001
+📦 Projekto struktūra (pavyzdys)
 
+simple-port-scanner/
+├── app.py
+├── requirements.txt
+├── Dockerfile
+├── start.sh
+├── start.bat
+└── README.md
+
+Sėkmės naudojant! 😊
