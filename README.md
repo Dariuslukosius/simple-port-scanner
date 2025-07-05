@@ -9,6 +9,8 @@ Programėlė leidžia per paprastą web sąsają įvesti tikslinį IP adresą ar
 
 Projektas taip pat demonstruoja, kaip sukurti Flask aplikaciją, ją konteinerizuoti naudojant Docker ir paleisti izoliuotoje aplinkoje.
 
+![Aprašymas](images/results.png)
+
 FUNKCIONALUMAS
 --------------
 - TCP portų skenavimas pagal vartotojo įvestus portų diapazonus
@@ -34,6 +36,9 @@ cd simple-port-scanner
 📦 PALEIDIMO BŪDAI:
 
 1. Docker – alternatyva
+
+   ![Docker](images/docker.png)
+
 -----------------------
 Jei turi Docker, tai pats paprasčiausias būdas paleisti:
 
@@ -42,8 +47,11 @@ Jei turi Docker, tai pats paprasčiausias būdas paleisti:
 
 Tuomet eik naršyklėje į: http://localhost:5001
 
+![Localhost](images/localhost.png)
 
 2. Lokalus paleidimas su Python (Unix/macOS) – alternatyva
+
+   ![Python logo](images/python.png)
 ----------------------------------------------------------
 Atidaryk terminalą projekto kataloge.
 
@@ -61,6 +69,7 @@ Jei neturi start.sh, sukurk jį su šiuo turiniu:
 
 Eik į naršyklę ir atsidaryk: http://localhost:5001
 
+![Localhost](images/localhost.png)
 
 3. Lokalus paleidimas su Python (Windows) – alternatyva
 -------------------------------------------------------
@@ -80,4 +89,4 @@ Jei neturi start.bat, sukurk jį su šiuo turiniu:
 
 Eik į naršyklę ir atsidaryk: http://localhost:5001
 
-
+![Localhost](images/localhost.png)
